@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgba(50, 50, 50, 0.8);
+}
+/*Try apply liquid layout here  (from pg.??)*/
+body {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    overflow:auto;
+}
+p {
+    font-size: 90%;
+}
+td:hover{
+    color: rgba(0, 0, 0, 1);
+    /*  background-color: yellow; */
+}
+th, td {
+    margin: 5px 5px 5px 5px;
+    vertical-align: text-top;
+}
+.intro {
+    margin-top: 130px;
+    margin-bottom: 80px;
+}
+.cv-category{
+    font-size: 110%;
+    font-weight: bold;
+}
+.job-info{
+    font-weight: bold;
+    padding-top: 30px;
+}
+.job-location{
+    font-size: 80%;
+    font-style: italic;
+    padding: 0px 10px 0px 10px;
+}
+.job-details{
+    font-size: 90%;
+    font-style: italic;
+    padding: 10px;
+}
+#page-wrap {
+    text-align: left;
+    width: 960px;
+    margin: 0 auto;
+}
