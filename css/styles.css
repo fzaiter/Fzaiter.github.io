@@ -52,3 +52,24 @@ th, td {
     width: 960px;
     margin: 0 auto;
 }
+#email {
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding: 4px; 
+    height:140%;
+    width:20%;
+}
+.icon-button{
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+}
+.icon-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#id {
+    color: red;
+    font-style: italic;
+}
