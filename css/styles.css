@@ -25,27 +25,48 @@ th, td {
     margin: 5px 5px 5px 5px;
     vertical-align: text-top;
 }
+.header {
+    margin-top: 30px;
+    text-align: right;
+}
 .intro {
-    margin-top: 130px;
+    margin-top: 50px;
     margin-bottom: 80px;
 }
-.cv-category{
-    font-size: 110%;
+.cv-category {
+    width: 5%;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    vertical-align: bottom;
+    text-align:right;
+}
+.verticalLine {
+    border-left: thin solid;
+    color: rgba(0, 0, 0, 0.6);
+}
+.job-title{
+    width: 70%;
     font-weight: bold;
 }
-.job-info{
-    font-weight: bold;
-    padding-top: 30px;
-}
-.job-location{
-    font-size: 80%;
+.job-details{
+    width: 25%;
     font-style: italic;
     padding: 0px 10px 0px 10px;
 }
-.job-details{
-    font-size: 90%;
+.job-description{
     font-style: italic;
     padding: 10px;
+    text-align: justify;
+}
+.icon-button, .language-selection {
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+}
+.icon-button:hover, .language-selection:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 #page-wrap {
     text-align: left;
@@ -57,18 +78,8 @@ th, td {
     border-color: rgba(0, 0, 0, 0.2);
     padding: 4px; 
     height:140%;
-    width:20%;
+    width:30%;
 }
-.icon-button{
-    border-radius: 5px;
-    background-color: transparent;
-    border: none;
-}
-.icon-button:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
 #id {
     color: red;
     font-style: italic;
