@@ -48,7 +48,7 @@ td:hover{
     width: 75%;
     font-weight: bold;
 }
-.logos img {
+img.logos {
     width: 70px;
     height: auto;
 }
