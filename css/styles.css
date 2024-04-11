@@ -9,11 +9,14 @@
 }
 /*Try apply liquid layout here  (from pg.??)*/
 body {
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
+    max-width: 960px;
+    margin-inline: auto;
+    text-align: left;
     overflow:auto;
 }
+/* *{
+    border: 1px solid red;
+} */
 p {
     font-size: 90%;
 }
@@ -34,9 +37,6 @@ th, td {
     margin-bottom: 80px;
 }
 .container {
-    text-align: left;
-    max-width: 960px;
-    margin: 0 auto;
 }
 .cv-category {
     width: 5%;
@@ -78,7 +78,7 @@ th, td {
     border-color: rgba(0, 0, 0, 0.2);
     padding: 4px; 
     height:140%;
-    width:30%;
+    min-width: 250px;
 }
 #id {
     color: red;
