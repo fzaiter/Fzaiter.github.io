@@ -33,6 +33,11 @@ th, td {
     margin-top: 50px;
     margin-bottom: 80px;
 }
+.container {
+    text-align: left;
+    max-width: 960px;
+    margin: 0 auto;
+}
 .cv-category {
     width: 5%;
     font-weight: bold;
@@ -67,11 +72,6 @@ th, td {
 .icon-button:hover, .language-selection:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.05);
-}
-#page-wrap {
-    text-align: left;
-    width: 960px;
-    margin: 0 auto;
 }
 #email {
     border-radius: 15px;
