@@ -32,6 +32,7 @@ td:hover{
 .container {
 }
 .cv-category {
+    position: sticky;
     width: 5%;
     font-weight: bold;
     writing-mode: vertical-lr;
