@@ -3,33 +3,26 @@
 * {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
     color: rgba(50, 50, 50, 0.8);
+    /* border: 1px solid red; */
 }
-/*Try apply liquid layout here  (from pg.??)*/
 body {
     max-width: 960px;
     margin-inline: auto;
-    text-align: left;
+    width:95%;
+    min-width: 300px;
     overflow:auto;
 }
-/* *{
-    border: 1px solid red;
-} */
-p {
-    font-size: 90%;
+th, td {
+    vertical-align: text-top;
+    padding: 0px  0px 10px 10px;
 }
 td:hover{
     color: rgba(0, 0, 0, 1);
     /*  background-color: yellow; */
 }
-th, td {
-    margin: 5px 5px 5px 5px;
-    vertical-align: text-top;
-}
 .header {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: right;
 }
 .intro {
@@ -56,12 +49,11 @@ th, td {
 }
 .job-details{
     width: 25%;
+    font-size: 90%;
     font-style: italic;
-    padding: 0px 10px 0px 10px;
 }
 .job-description{
     font-style: italic;
-    padding: 10px;
     text-align: justify;
 }
 .icon-button, .language-selection {
