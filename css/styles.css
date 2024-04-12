@@ -16,6 +16,7 @@ body {
 }
 table {
     border-spacing: 8px;
+    width: 100%;
 }
 td {
     vertical-align: top;
@@ -25,16 +26,30 @@ td {
     text-align: right;
 }
 .intro {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.greetings {
+    margin-top: 50px;;
+    min-width: 400px;
+}
+.referrals {
+    align-content: flex-end;
+}
+.my-details {
     margin-bottom: 80px;
 }
 .cv-category {
     font-weight: bold;
     writing-mode: vertical-lr;
+    margin-top: 10px;
     transform: rotate(180deg);
     vertical-align: bottom;
-    
     text-align:right;
+    white-space: nowrap;
+
     position: sticky;
     position: -webkit-sticky; /* Safari */  
     top: 30px;
@@ -44,21 +59,16 @@ td {
     border-left: thin solid;
     color: rgba(0, 0, 0, 0.6);
 }
-.job-title{
+.cv-title{
     font-weight: bold;
     vertical-align: bottom;
 }
-.job-date{
+.cv-date{
     font-size: 80%;
     font-weight: bold;
     font-style: italic;
 }
-/* .job-location{
-    margin-top: 0px;
-    font-size: 90%;
-    font-style: italic;
-} */
-.job-description{
+.cv-description{
     font-style: italic;
     text-align: justify;
     font-size: 90%;
@@ -81,17 +91,26 @@ td {
     width: 0%;
 }
 .logo-container {
-    text-align: center;
     display: block;
+    text-align: center;
 }
-img.logos {
-    width: 75px;
+img.referral-logo{
+    width: 50px;
     height: auto;
+    vertical-align: middle;
     border-radius: 5px;
     background-color: transparent;
     border: none;
 }
-img.logos:hover {
+img.logos {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+}
+img.logos:hover, img.referral-logo:hover{
     background-color: rgba(0, 0, 0, 0.1);
 }
 #email {
