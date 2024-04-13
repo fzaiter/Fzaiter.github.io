@@ -13,6 +13,7 @@ body {
     min-width: 300px;
     overflow:auto;
     text-align: left;
+    background-color: rgb(244, 244, 240);
 }
 table {
     border-spacing: 8px;
@@ -23,6 +24,11 @@ td {
 }
 .header {
     margin-top: 20px;
+    text-align: right;
+}
+.footer {
+    margin-top: 60px;
+    margin-bottom: 60px;
     text-align: right;
 }
 .intro {
@@ -123,4 +129,7 @@ img.logos:hover, img.referral-logo:hover{
 #id {
     color: red;
     font-style: italic;
+}
+#top {
+    margin-top: -20px;
 }
