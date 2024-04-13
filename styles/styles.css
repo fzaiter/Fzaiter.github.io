@@ -44,7 +44,7 @@ td {
 .referrals {
     align-content: flex-end;
 }
-.my-details {
+.my-info {
     margin-bottom: 80px;
 }
 .cv-category {
@@ -118,6 +118,9 @@ img.logos {
 }
 img.logos:hover, img.referral-logo:hover{
     background-color: rgba(0, 0, 0, 0.1);
+}
+#more-info {
+    display: none;
 }
 #email {
     border-radius: 15px;
