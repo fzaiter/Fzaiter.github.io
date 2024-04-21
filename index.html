@@ -1,299 +1,705 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <title>Fernando Zaiter-EN</title>
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <script src="scripts/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body onscroll="ProgressFunction()">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body onscroll="ProgressFunction()">
     <div class="header">
-        <a id="top"></a>
-        <button class="language-selection"><a href="/">English</a></button>
-        <button class="language-selection"><a href="spanish.html">Español</a></button>
+      <a id="top"></a>
+      <button class="language-selection"><a href="/">English</a></button>
+      <button class="language-selection">
+        <a href="spanish.html">Español</a>
+      </button>
     </div>
     <div class="progress-bar" id="myBar"></div>
     <div class="intro">
-        <div class="greetings">
-            <h1>Hi, I'm Fernando</h1>
-        </div>
-        <div class="referrals">
-            <span class="logo-container">
-                <a href="https://linkedin.com/in/fernandozaiter" target="_blank"><img class="referral-logo" src="images/Linkedin-logo.png" alt="Linkedin-logo"></a>
-                <a href="https://github.com/fzaiter" target="_blank"><img class="referral-logo" src="images/Github-logo.png" alt="Github logo"></a>
-                <a href="FZaiter-CV.pdf" target="_blank"><img class="referral-logo" src="images/CV-logo.png" alt="CV logo"></a>
-            </span>
-        </div>
+      <div class="greetings">
+        <h1>Hi, I'm Fernando!</h1>
+      </div>
+      <div class="referrals">
+        <span class="logo-container">
+          <a href="https://linkedin.com/in/fernandozaiter" target="_blank"
+            ><img
+              class="referral-logo"
+              src="images/Linkedin-logo.png"
+              alt="Linkedin-logo"
+          /></a>
+          <a href="https://github.com/fzaiter" target="_blank"
+            ><img
+              class="referral-logo"
+              src="images/Github-logo.png"
+              alt="Github logo"
+          /></a>
+          <a href="FZaiter-CV-EN.pdf" target="_blank"
+            ><img class="referral-logo" src="images/CV-logo.png" alt="CV logo"
+          /></a>
+        </span>
+      </div>
     </div>
     <div class="my-info">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <input type="text" name="correo" value="fzaiter.cerzn@aleeas.com" readonly="readonly" id=email />
-        <button class="icon-button" onclick="CopyToClipboard('email')"><i class="material-icons">content_copy</i></button>
-        <button class="icon-button" onclick="CopyToClipboard('email')"><a href="mailto:emailaddress@mail.com?subject=Portfolio Contact"><i class="material-icons">mail</i></a></button>
+      <p>
+        I am glad that you have decided to visit my site and I hope that it will
+        help you to get to know me better through my skills and previous
+        experiences that I hope will fit with the ideas you need to develop.
+      </p>
+      <p>
+        I am aware that there may be some skills that you are looking for that
+        are not included here, and so I would like to stress that I am a very
+        proactive person who is constantly willing to learn. I know this is a
+        well-worn expression so I am happy to invite you to review my CV below
+        which I think makes it clear that when I say this it is not just a
+        figure of speech.
+      </p>
+      <p>
+        I would be delighted if you could contact me so that we can develop any
+        of your ideas and doubts.
+      </p>
+      <input
+        type="text"
+        name="correo"
+        value="fzaiter.cerzn@aleeas.com"
+        readonly="readonly"
+        id="email"
+      />
+      <button class="icon-button" onclick="CopyToClipboard('email')">
+        <i class="material-icons">content_copy</i>
+      </button>
+      <button class="icon-button" onclick="CopyToClipboard('email')">
+        <a href="mailto:emailaddress@mail.com?subject=Portfolio Contact"
+          ><i class="material-icons">mail</i></a
+        >
+      </button>
     </div>
     <div class="container">
-        <div class="skills">
-            <table>
-                <col style="width:4%">
-                <col style="width:96%">
-                <tbody>
-                    <td class="cv-category">/SKILLS</td>
-                    <td>
-                        <div class="verticalLine">
-                            <table>
-                                <col style="width:20%">
-                                <col style="width:80%">
-                                <tbody>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">HARD SKILLS</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">Python / Java / HTML / CSS / SQL / Photoshop / Illustrator / inDesign / CAD / 3D Modelling / ...</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">SOFT SKILLS</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">Design / Presentation / Managing / ...</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">CURRENTLY LEARNING</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">Machine Learning Algorithms / Numpy / Pandas / Matplotlib / Revit / ...</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tbody>
-            </table>
-        </div>
-        <br><br><br>
-        <div class="projects">
-            <table>
-                <col style="width:4%">
-                <col style="width:96%">
-                <tbody>
-                    <td class="cv-category">/PROJECTS</td>
-                    <td>
-                        <div class="verticalLine">
-                            <table>
-                                <col style="width:20%">
-                                <col style="width:80%">
-                                <tbody>
-                                    <tr>
-                                        <td class="cv-date">MON/ 20XX TO THIS DAY</td>
-                                        <td class="cv-title">_PROJECT NAME - Project detail</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="logo-container"><a href="https://github.com/fzaiter/Maze-Solver" target="_blank"><img class="logos" src="images/Github-logo.png" alt="Github logo"></a></span></td>
-                                        <td class="cv-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date">MON/ 20XX TO THIS DAY</td>
-                                        <td class="cv-title" >_PROJECT NAME - Project detail</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="logo-container"><a href="https://github.com/fzaiter/Fzaiter.github.io" target="_blank"><img class="logos" src="images/Github-logo.png" alt="Github logo"></a></span></td>
-                                        <td class="cv-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tbody>
-            </table>
-        </div>
-        <br><br><br>
-        <div class="education">
-            <table>
-                <col style="width:4%">
-                <col style="width:96%">
-                <tbody>
-                    <td class="cv-category">/EDUCATION</td>
-                    <td>
-                        <div class="verticalLine">
-                            <table>
-                                <col style="width:20%">
-                                <col style="width:80%">
-                                <tbody>
-                                    <tr>
-                                        <td class="cv-date">MON/ 20XX TO THIS DAY</td>
-                                        <td class="cv-title">_UNIVERSITY DEGREE - Superduper Marks</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="logo-container"><a href="https://www.gold.ac.uk/" target="_blank"><img class="logos" src="images/Goldsmiths-logo.png" alt="Goldsmiths logo"></a></span></td>
-                                        <td class="cv-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date">MON/ 20XX TO THIS DAY</td>
-                                        <td class="cv-title" >_UNIVERSITY DEGREE - Superduper Marks</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="logo-container"><a href="https://www.unav.edu/web/escuela-tecnica-superior-de-arquitectura" target="_blank"><img class="logos" src="images/UNAV-logo.png" alt="UNAV logo"></a></span></td>
-                                        <td class="cv-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date">MON/ 20XX TO THIS DAY</td>
-                                        <td class="cv-title">_UNIVERSITY DEGREE - Superduper Marks</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="logo-container"><a href="https://www.unav.edu/web/escuela-tecnica-superior-de-arquitectura" target="_blank"><img class="logos" src="images/UNAV-logo.png" alt="UNAV logo"></a></span></td>
-                                        <td class="cv-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tbody>
-            </table>
-        </div>
-        <br><br><br>
-        <div class="experience">
-            <table>
-                <col style="width:4%">
-                <col style="width:96%">
-                <tbody>
-                    <td class="cv-category">/PROFESSIONAL EXPERIENCE</td>
-                    <td>
-                        <div class="verticalLine">
-                            <table>
-                                <col style="width:20%">
-                                <col style="width:80%">
-                                <tbody>
-                                    <tr>
-                                        <td class="cv-date">MON/ 20XX TO THIS DAY</td>
-                                        <td class="cv-title">_COMPANY ABC ABC ABC - Superduper Role</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="logo-container"><a href="https://www.ahmm.co.uk/" target="_blank"><img class="logos" src="images/AHMM-logo.png" alt="AHMM logo"></a></span></td>
-                                        <td class="cv-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date">MON/ 20XX TO THIS DAY</td>
-                                        <td class="cv-title" >_COMPANY ABC ABC ABC - Superduper Role</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="logo-container"><a href="https://www.linkedin.com/company/zaiter-photography" target="_blank"><img class="logos" src="images/ZaiterPhotography-logo.png" alt="Zaiter Photography logo"></a></span></td>
-                                        <td class="cv-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date">MON/ 20XX TO THIS DAY</td>
-                                        <td class="cv-title">_COMPANY ABC ABC ABC - Superduper Role</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="logo-container"><a href="https://lds-uk.com/" target="_blank"><img class="logos" src="images/LDS-logo.png" alt="LDS logo"></a></span></td>
-                                        <td class="cv-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tbody>
-            </table>
-        </div>
-        <div class="languages">
-            <table>
-                <col style="width:4%">
-                <col style="width:96%">
-                <tbody>
-                    <td class="cv-category">/LANGUAGES</td>
-                    <td>
-                        <div class="verticalLine">
-                            <table>
-                                <col style="width:20%">
-                                <col style="width:80%">
-                                <tbody>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">SPANISH</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">Mother Tongue</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">ENGLISH</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">Fluent<br>
-                                            +5 Years living in uk | +10 years working for UK employers | University degree in the UK
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">FRENCH</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">Basic<br>
-                                            One month living in France with intensive daily classes | Three courses at school. 
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tbody>
-            </table>
-        </div>
-        <div class="other">
-            <table>
-                <col style="width:4%">
-                <col style="width:96%">
-                <tbody>
-                    <td class="cv-category">/OTHER</td>
-                    <td>
-                        <div class="verticalLine">
-                            <table>
-                                <col style="width:20%">
-                                <col style="width:80%">
-                                <tbody>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">CERTIFICATES</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">...</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">NON-IT PROJECTS</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">ANT atelier / Cofounder & Image Manager - Company based on infographics and photography.<br>
-                                            BLOGARQ.com/ Cofounder & Writer - Architectural blog (200k visits to the present day).<br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">PHOTOGRAPHY AWARDS</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">Winner of the Human Rights 2012/The Fifth Power and Occidens 2013/Day & Night Sculptures Timelapse competitions as well as a second prize in the Photography, Science & Nature 2012 competition and shortlisted in Human Rights 2011/The Fear of the West.</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-date" rowspan="2"></td>
-                                        <td class="cv-title">HOBBIES</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cv-description">Home Automation | Woodworking</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tbody>
-            </table>
-        </div>
+      <div class="skills">
+        <table>
+          <col style="width: 4%" />
+          <col style="width: 96%" />
+          <tbody>
+            <td class="cv-category">/SKILLS</td>
+            <td>
+              <div class="verticalLine">
+                <table>
+                  <col style="width: 20%" />
+                  <col style="width: 80%" />
+                  <tbody>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">HARD SKILLS</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">
+                        Python / Java / HTML / CSS / SQL / Photoshop /
+                        Illustrator / inDesign / CAD / 3D Modelling
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">SOFT SKILLS</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">
+                        Presentation / Coordination / Project Management /
+                        Design / Problem-solving / Teamwork /
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">CURRENTLY LEARNING</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">
+                        ML Algorithms / Numpy / Pandas / Matplotlib / Revit
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <br /><br />
+      <div class="projects">
+        <table>
+          <col style="width: 4%" />
+          <col style="width: 96%" />
+          <tbody>
+            <td class="cv-category">/PROJECTS</td>
+            <td>
+              <div class="verticalLine">
+                <table>
+                  <col style="width: 20%" />
+                  <col style="width: 80%" />
+                  <tbody>
+                    <tr>
+                      <td class="cv-date">SEP/ 2020 TO MAY 2021</td>
+                      <td class="cv-title">
+                        _TRAINING MAZE SOLVING THROUGH REINFORCEMENT LEARNING -
+                        BSc Final Project
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="logo-container"
+                          ><a
+                            href="https://github.com/fzaiter/Maze-Solver"
+                            target="_blank"
+                            ><img
+                              class="logos"
+                              src="images/Github-logo.png"
+                              alt="Github logo" /></a
+                        ></span>
+                      </td>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            Utilised <b>Python</b> to implement and evaluated a
+                            new multi-agent approach on maze problems based on
+                            the <b>Q-learning</b> algorithm. The experiments
+                            performed show the potential of this new approach
+                            highlighting its greater adaptability for different
+                            types of scenarios and its better performance for
+                            most of the performed experiments.
+                            <font color="red"
+                              >(maybe try add some metrics for this? Any % to be
+                              more specific?)
+                            </font>
+                          </li>
+                          <li>
+                            Implemented the use of <b>Numpy</b> and
+                            <b>Matplotlib</b>
+                            to process and visualize the data required to run
+                            the experiments.
+                          </li>
+                          <li>
+                            Created a <b>Windows application</b> by using
+                            <b>OpenCV</b> and <b>Pillow</b> to run all the
+                            different experiments while also automatically
+                            exporting all the results (tables, images and video)
+                            to compile a professional report for further
+                            analysis.
+                          </li>
+                        </ul>
+                        <br /><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date">APR/ 2024</td>
+                      <td class="cv-title">_HTML/ CSS CURRICULUM VITAE</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="logo-container"
+                          ><a
+                            href="https://github.com/fzaiter/Fzaiter.github.io"
+                            target="_blank"
+                            ><img
+                              class="logos"
+                              src="images/Github-logo.png"
+                              alt="Github logo" /></a
+                        ></span>
+                      </td>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            Implementation of an online version of my own CV in
+                            this same page hosted through GitHub Pages.
+                            Application of <b>HTML</b> and <b>CSS</b> to create
+                            a <b>responsive</b> website so that it can be
+                            displayed correctly on all types of screens.
+                          </li>
+                          <li>
+                            <b>Integral design</b> of the website writing all
+                            the code from the original design idea and including
+                            some <b>JavaScript</b> functions for ease of use.
+                          </li>
+                          <br /><br />
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <br /><br />
+      <div class="education">
+        <table>
+          <col style="width: 4%" />
+          <col style="width: 96%" />
+          <tbody>
+            <td class="cv-category">/EDUCATION</td>
+            <td>
+              <div class="verticalLine">
+                <table>
+                  <col style="width: 20%" />
+                  <col style="width: 80%" />
+                  <tbody>
+                    <tr>
+                      <td class="cv-date">SEP/ 2017 TO JUN/ 2021</td>
+                      <td class="cv-title">
+                        _COMPUTER AND INFORMATION SYSTEMS (BSc.)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="logo-container">
+                          <a
+                            href="https://www.london.ac.uk/study/courses/undergraduate/bsc-computer-science"
+                            target="_blank"
+                          >
+                            <img
+                              class="logos"
+                              src="images/UOL-logo.png"
+                              alt="University of London logo"
+                          /></a>
+                          <br />
+                          <a href="https://www.gold.ac.uk/" target="_blank">
+                            <img
+                              class="logos"
+                              src="images/Goldsmiths-logo.png"
+                              alt="Goldsmiths logo"
+                          /></a>
+                        </span>
+                      </td>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            GOLDMISTHS, UNIVERSITY OF LONDON /Distance Learning
+                          </li>
+                          <li>Graduated with <b>First Class Honours</b>.</li>
+                          <li>
+                            Develop computer science skills, with a strong
+                            background in programming and mathematics, as well
+                            as a final year specialization in the fields of
+                            <b>Artificial Intelligence</b>,
+                            <b>Neural Networks</b> and
+                            <b>Natural Language Processing</b>.
+                          </li>
+                        </ul>
+                        <br /><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date">SEP/ 2007 TO DEC/ 2013</td>
+                      <td class="cv-title">
+                        _MASTER DEGREE IN ARCHITECTURE (MSc. Arch)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="logo-container"
+                          ><a
+                            href="https://www.unav.edu/web/escuela-tecnica-superior-de-arquitectura"
+                            target="_blank"
+                            ><img
+                              class="logos"
+                              src="images/UNAV-logo.png"
+                              alt="UNAV logo" /></a
+                        ></span>
+                      </td>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            UNIVERSITY OF NAVARRA /Higher Technical School of
+                            Architecture
+                          </li>
+                          <li>
+                            <b>Architectural design</b> and
+                            <b>project management</b> in all areas, from
+                            construction detailing to the calculation of
+                            structures and installations, including other areas
+                            such as urban planning, legislation, theory and
+                            history.
+                          </li>
+                        </ul>
+                        <br /><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date">SEP/ 2011 TO JUN/ 2013</td>
+                      <td class="cv-title">
+                        _SPECIALIZATION IN RESTORATION AND REHABILITATION OF
+                        ARCHITECTURE
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="logo-container"
+                          ><a
+                            href="https://www.unav.edu/web/escuela-tecnica-superior-de-arquitectura"
+                            target="_blank"
+                            ><img
+                              class="logos"
+                              src="images/UNAV-logo.png"
+                              alt="UNAV logo" /></a
+                        ></span>
+                      </td>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            UNIVERSITY OF NAVARRA /Higher Technical School of
+                            Architecture
+                          </li>
+                          <li>
+                            <b
+                              >Integral development of restoration and
+                              rehabilitation projects</b
+                            >
+                            ranging from the initial study, survey and
+                            restoration of plans, analysis of pathologies and
+                            restoration techniques including knowledge in the
+                            history of architecture and construction.
+                          </li>
+                        </ul>
+                        <br /><br />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <br /><br />
+      <div class="experience">
+        <table>
+          <col style="width: 4%" />
+          <col style="width: 96%" />
+          <tbody>
+            <td class="cv-category">/PROFESSIONAL EXPERIENCE</td>
+            <td>
+              <div class="verticalLine">
+                <table>
+                  <col style="width: 20%" />
+                  <col style="width: 80%" />
+                  <tbody>
+                    <tr>
+                      <td class="cv-date">JUN/ 2017 TO THIS DAY</td>
+                      <td class="cv-title">
+                        _ALLFORD HALL MONAGHAN MORRIS - Architect
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="logo-container"
+                          ><a href="https://www.ahmm.co.uk/" target="_blank"
+                            ><img
+                              class="logos"
+                              src="images/AHMM-logo.png"
+                              alt="AHMM logo" /></a
+                        ></span>
+                      </td>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            <b>Project development</b> from the first conceptual
+                            phases to the detailed ones, including
+                            <b>constant presentations</b> both to senior
+                            management and to clients and teams from different
+                            disciplines outside the company, as well as ensuring
+                            <b>coordination</b> with the latter to guarantee the
+                            correct development.
+                          </li>
+                          <li>
+                            Work both in the <b>design</b> through the
+                            development of ideas, drawings, 3D modelling,
+                            graphics,... as well as in the
+                            <b>technical and regulatory</b> area through the
+                            constant monitoring of all the variables that may
+                            affect the development of the project until the
+                            <b>final documents and deliverables</b> are finished
+                            and presented to the clients.
+                          </li>
+                          <li>
+                            Project architect.
+                            <b>Client presentations</b> and
+                            <b>leading team-wide meetings</b> and foster
+                            collaboration among teams and across departments
+                            assigning tasks as needed. Spot project
+                            inefficiencies and quickly
+                            <b>identify solutions</b> to those challenges, while
+                            <b>managing deadlines</b> to ensure that all
+                            deliverables are completed on time.
+                          </li>
+                        </ul>
+                        <br /><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date">FEB/ 2015 TO FEB/2019</td>
+                      <td class="cv-title">
+                        _ZAITER PHOTOGRAPHY - Architectural Photographer &
+                        Assistant
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="logo-container"
+                          ><a
+                            href="https://www.linkedin.com/company/zaiter-photography"
+                            target="_blank"
+                            ><img
+                              class="logos"
+                              src="images/ZaiterPhotography-logo.png"
+                              alt="Zaiter Photography logo" /></a
+                        ></span>
+                      </td>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            Freelance architectural photographer based in
+                            London.
+                            <b>Commissioned interior photography</b> work
+                            including full post production of final images for
+                            media publication.
+                          </li>
+                          <li>
+                            <b>Brand development</b> including in-house design
+                            of customized documents, business cards and a
+                            website.
+                          </li>
+                          <li>
+                            Photography assistant to renowned architectural
+                            photographer <b>Edmund Sumner</b> whose work
+                            includes commissions in UK, India, Japan, Mexico,
+                            the Middle East and the USA.
+                            <b>On-site assistance</b> for shooting and control
+                            of photographic gear, as well as complete and
+                            <b>final post-production</b> of the images both
+                            on-site and remotely.
+                          </li>
+                        </ul>
+                        <br /><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date">OCT/ 2015 TO MAY/ 2017</td>
+                      <td class="cv-title">
+                        _LIFSCHUTZ DAVIDSON SANDILANDS - Architect
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="logo-container"
+                          ><a href="https://lds-uk.com/" target="_blank"
+                            ><img
+                              class="logos"
+                              src="images/LDS-logo.png"
+                              alt="LDS logo" /></a
+                        ></span>
+                      </td>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            Worked on several projects with a
+                            <b>wide variety of scales</b> from
+                            <b>feasibilities</b> to
+                            <b>planning applications</b> focused on
+                            architectural development and urban design.
+                          </li>
+                          <li>
+                            Development and definition of
+                            <b>project plans</b> including the necessary
+                            <b>coordination</b> with the rest of the teams as
+                            well as production of
+                            <b>3D models, images and graphic documents</b>
+                            necessary for the correct explanation of the
+                            project, both for internal presentations and for
+                            final deliverables for clients.
+                          </li>
+                        </ul>
+                        <br /><br />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <br /><br />
+      <div class="languages">
+        <table>
+          <col style="width: 4%" />
+          <col style="width: 96%" />
+          <tbody>
+            <td class="cv-category">/LANGUAGES</td>
+            <td>
+              <div class="verticalLine">
+                <table>
+                  <col style="width: 20%" />
+                  <col style="width: 80%" />
+                  <tbody>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">SPANISH</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">Mother Tongue</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">ENGLISH</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">
+                        Fluent<br />
+                        +5 Years living in uk | +10 years working for UK
+                        employers | University degree in the UK
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">FRENCH</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">
+                        Basic<br />
+                        One month living in France with intensive daily classes
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <br /><br />
+      <div class="other">
+        <table>
+          <col style="width: 4%" />
+          <col style="width: 96%" />
+          <tbody>
+            <td class="cv-category">/OTHER MERITS</td>
+            <td>
+              <div class="verticalLine">
+                <table>
+                  <col style="width: 20%" />
+                  <col style="width: 80%" />
+                  <tbody>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">OTHER PROJECTS</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://www.facebook.com/AntAtelier/"
+                              target="_blank"
+                            >
+                              ANT atelier / Cofounder & Image Manager</a
+                            >
+                            - Company based on infographics and photography.
+                          </li>
+                          <li>
+                            <a
+                              href="https://blogarq.wordpress.com/"
+                              target="_blank"
+                            >
+                              BLOGARQ.com/ Cofounder & Writer</a
+                            >
+                            - Architectural blog (200k visits to the present
+                            day).
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">OTHER PROFESSIONAL EXPERIENCES</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            Assistant of the Construction Department of the UNAV
+                            (Professor in charge: Domingo Pellicer Daviña).
+                            Assistant in class and correction of student's work.
+                          </li>
+                          <li>
+                            Graphic designer at UNAV Publications publishing
+                            house. Publication design, photo editing and
+                            proofreading.
+                          </li>
+                          <li>
+                            Collaborator in architectural fairs. Design of the
+                            different spaces, customer service and salesperson.
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">PHOTOGRAPHY MERITS</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">
+                        <ul>
+                          <li>
+                            Human Rights 2012/ The Fifth Power -
+                            <a
+                              href="https://www.unav.edu/noticias/-/contents/17/04/2012/heroic-trader-fights-looters-de-fernando-salah-zaiter-primer-premio-del-iii-concurso-de-fotografia-del-foro-de-derechos-humanos/content/lovPblW1fC70/316253"
+                              target="_blank"
+                            >
+                              Winner
+                            </a>
+                          </li>
+                          <li>
+                            Occidens 2013/ Day & Night Sculptures Timelapse -
+                            <a
+                              href="https://vimeo.com/60372761"
+                              target="_blank"
+                            >
+                              Winner ex-aequo
+                            </a>
+                          </li>
+                          <li>
+                            Photography, Science & Nature 2012 - Second prize
+                          </li>
+                          <li>
+                            Director of the ETSAUN Architectural Photography
+                            Club
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cv-date" rowspan="2"></td>
+                      <td class="cv-title">HOBBIES</td>
+                    </tr>
+                    <tr>
+                      <td class="cv-description">
+                        <ul>
+                          <li>Home Automation | Woodworking</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="footer">
-        <button class="language-selection"><a href="#top">Back to top</a></button>
+      <button class="language-selection"><a href="#top">Back to top</a></button>
     </div>
-</body>
+  </body>
 </html>
-
