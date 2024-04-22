@@ -7,13 +7,10 @@
   color: rgba(50, 50, 50, 0.8);
   /* border: 1px solid red; */
 }
-html {
-  width: 100%;
-}
 body {
   max-width: 960px;
   margin: auto;
-  width: 80%;
+  width: 90vw;
   min-width: 300px;
   overflow: auto;
   background-color: rgb(244, 244, 240);
@@ -53,7 +50,12 @@ ul {
   font-style: oblique;
   text-align: justify;
   text-indent: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 .section-container {
   display: flex;
@@ -70,14 +72,16 @@ ul {
 }
 .category-title {
   font-weight: bold;
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  vertical-align: bottom;
   text-align: right;
 
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  top: 30px;
+  vertical-align: bottom;
+
+  align-self: flex-start;
   position: sticky;
   position: -webkit-sticky; /* Safari */
-  top: 30px;
 }
 .cv-key-info {
   display: flex;
@@ -102,11 +106,10 @@ ul {
 .cv-description {
   font-style: italic;
   text-align: justify;
-  font-size: 80%;
+  font-size: 90%;
   flex: 1 1 500px;
 }
 .logo-container {
-  display: block;
   text-align: center;
   margin: auto;
   flex: 0 0 100px;
@@ -124,6 +127,7 @@ ul {
 }
 .progress-bar {
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   height: 8px;
@@ -158,7 +162,7 @@ img.referral-logo:hover {
   border-color: rgba(0, 0, 0, 0.2);
   padding: 4px;
   height: 140%;
-  min-width: 250px;
+  min-width: 240px;
 }
 #id {
   color: red;
@@ -172,11 +176,21 @@ img.referral-logo:hover {
 #other-merits .category-info * {
   flex-basis: 100%;
 }
-@media screen and (max-width: 600px) {
+#skills .cv-extra-info,
+#languages .cv-extra-info,
+#other-merits .cv-extra-info {
+  margin-bottom: 20px;
+}
+/*The use of 666 below is not due to any satanic myth, 
+it is simply the result of 600px -used for several 
+flexboxes-divided by 90% (as this is the width value 
+implemented in body).*/
+@media (max-width: 666px) {
   .category-title {
     writing-mode: horizontal-tb;
     transform: rotate(0deg);
     top: 0px;
+    padding: 8px;
     flex: 1 1 500px;
     position: sticky;
     position: -webkit-sticky; /* Safari */
@@ -189,5 +203,10 @@ img.referral-logo:hover {
     flex: 1 1 500px;
     padding: 0em;
     border-left: 0px;
+  }
+}
+@media (max-width: 755px) {
+  .logo-container {
+    flex: 1 0 500px;
   }
 }
