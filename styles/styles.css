@@ -10,7 +10,7 @@
 body {
   max-width: 960px;
   margin: auto;
-  width: 90vw;
+  width: 90%;
   min-width: 300px;
   overflow: auto;
   background-color: rgb(244, 244, 240);
