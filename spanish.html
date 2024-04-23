@@ -1,26 +1,607 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fernando Zaiter-ES</title>
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="scripts/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
-    <div id="page-wrap">
-      <div class="header">
-        <button class="language-selection"><a href="/">English</a></button>
-        <button class="language-selection">
-          <a href="index-spanish.html">Español</a>
+  <body onscroll="ProgressFunction()">
+    <div class="header">
+      <a id="top"></a>
+      <button class="language-selection"><a href="/">English</a></button>
+      <button class="language-selection">
+        <a href="spanish.html">Español</a>
+      </button>
+    </div>
+    <div class="progress-bar" id="myBar"></div>
+
+    <section class="intro">
+      <div class="greetings">
+        <h1>Hola, soy Fernando!👋</h1>
+        <h2>Arquitecto e ingeniero informático</h2>
+      </div>
+      <div class="referrals">
+        <span class="logo-container">
+          <a href="https://linkedin.com/in/fernandozaiter" target="_blank"
+            ><img
+              class="referral-logo"
+              src="images/Linkedin-logo.png"
+              alt="Linkedin-logo"
+          /></a>
+          <a href="https://github.com/fzaiter" target="_blank"
+            ><img
+              class="referral-logo"
+              src="images/Github-logo.png"
+              alt="Github logo"
+          /></a>
+          <a href="FZaiter-CV-EN.pdf" target="_blank"
+            ><img class="referral-logo" src="images/CV-logo.png" alt="CV logo"
+          /></a>
+        </span>
+      </div>
+    </section>
+
+    <section class="my-info">
+      <p>
+        Me alegra que hayas decidido visitar mi página y espero que te sirva
+        para conocerme mejor a través de mis habilidades y experiencias previas
+        que espero encajen con las ideas que necesitas desarrollar.
+      </p>
+      <p>
+        Soy consciente de que puede haber algunas habilidades que estés buscando
+        y que no estén incluidas aquí, por lo que me gustaría destacar que soy
+        una persona muy proactiva y que está constantemente dispuesta a
+        aprender. Sé que se trata de una expresión muy manida, por lo que me
+        complace invitarle a revisar mi CV a continuación, que creo que deja
+        claro que cuando digo esto no es sólo una forma de hablar.
+      </p>
+      <p>
+        Estaré encantado de que te pongas en contacto conmigo para que podamos
+        desarrollar cualquiera de tus ideas y dudas.
+      </p>
+      <div class="contact">
+        <input
+          type="text"
+          name="correo"
+          value="fzaiter.cerzn@aleeas.com"
+          readonly="readonly"
+          id="email"
+        />
+        <button class="icon-button" onclick="CopyToClipboard('email')">
+          <i class="material-icons">content_copy</i>
+        </button>
+        <button class="icon-button" onclick="CopyToClipboard('email')">
+          <a href="mailto:emailaddress@mail.com?subject=Portfolio Contact"
+            ><i class="material-icons">mail</i></a
+          >
         </button>
       </div>
-      <div class="intro">
-        <h1>"Estamos trabajando en ello..."</h1>
+    </section>
+
+    <section id="skills" class="section-container">
+      <div class="category-title"><h3>/HABILIDADES</h3></div>
+      <div class="category-info">
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_HABILIDADES TÉCNICAS</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>
+                Python / Java / HTML / CSS / SQL / Photoshop / Illustrator /
+                inDesign / CAD / Modelado 3D
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_HABILIDADES TRANSVERSALES</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>
+                Presentación / Coordinación / Gestión de proyectos / Diseño /
+                Resolución de problemas / Trabajo en equipo
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_ACTUALMENTE APRENDIENDO</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>Algoritmos ML / Numpy / Pandas / Matplotlib / Revit</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section id="projects" class="section-container">
+      <div class="category-title"><h3>/PROYECTOS</h3></div>
+      <div class="category-info">
+        <div class="cv-key-info">
+          <div class="cv-date"><p>SEP/ 2020 TO MAY 2021</p></div>
+          <div class="cv-title">
+            <h4>
+              _RESOLUCIÓN DE LABERINTOS MEDIANTE EL APRENDIZAJE POR REFUERZO -
+              Proyecto Final de Carrera
+            </h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="logo-container">
+            <a href="https://github.com/fzaiter/Maze-Solver" target="_blank"
+              ><img
+                class="logos"
+                src="images/Github-logo.png"
+                alt="Github logo"
+            /></a>
+          </div>
+          <div class="cv-description">
+            <ul>
+              <li>
+                Uso de <b>Python</b> para implementar y evaluar un nuevo enfoque
+                multiagente en problemas de laberinto basado en el algoritmo
+                <b>Q-learning</b>. Los experimentos realizados muestran el
+                potencial de este nuevo enfoque destacando su mayor
+                adaptabilidad para diferentes tipos de escenarios y su mejor
+                rendimiento para la mayoría de los experimentos realizados.
+              </li>
+              <li>
+                Implementado el uso de <b>Numpy</b> y <b>Matplotlib</b> para
+                procesar y visualizar los datos requeridos para ejecutar los
+                experimentos.
+              </li>
+              <li>
+                Creación de una <b>aplicación de Windows</b> con una interfaz de
+                usuario ajustada a las necesidades de los experimentos
+                utilizando <b>OpenCV</b> y <b>Pillow</b> para ejecutar todos los
+                experimentos diferentes, además de exportar automáticamente
+                todos los resultados (tablas, imágenes y vídeo) para compilar un
+                informe profesional para un análisis posterior.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-date"><p>ABR/ 2024</p></div>
+          <div class="cv-title">
+            <h4>_HTML/ CSS CURRICULUM VITAE</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="logo-container">
+            <a
+              href="https://github.com/fzaiter/Fzaiter.github.io"
+              target="_blank"
+              ><img
+                class="logos"
+                src="images/Github-logo.png"
+                alt="Github logo"
+            /></a>
+          </div>
+          <div class="cv-description">
+            <ul>
+              <li>
+                Implementación de una versión <i>online</i> de mi propio CV en
+                esta misma página alojada a través de GitHub Pages. Aplicación
+                de <b>HTML</b> y <b>CSS</b> para crear un sitio web
+                <b>responsivo</b> para que pueda mostrarse correctamente en todo
+                tipo de pantallas.
+              </li>
+              <li>
+                <b>Diseño integral</b> del sitio web escribiendo todo el código
+                a partir de la idea de diseño original e incluyendo algunas
+                funciones de <b>JavaScript</b> para facilitar su uso.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section-container">
+      <div class="category-title"><h3>/FORMACIÓN</h3></div>
+      <div class="category-info">
+        <div class="cv-key-info">
+          <div class="cv-date"><p>SEP/ 2017 TO JUN/ 2021</p></div>
+          <div class="cv-title">
+            <h4>
+              _INGENERÍA EN INFORMÁTICA Y SISTEMAS DE INFORMACIÓN (Licenciatura)
+            </h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="logo-container">
+            <a
+              href="https://www.london.ac.uk/study/courses/undergraduate/bsc-computer-science"
+              target="_blank"
+            >
+              <img
+                class="logos"
+                src="images/UOL-logo.png"
+                alt="University of London logo"
+            /></a>
+            <a href="https://www.gold.ac.uk/" target="_blank">
+              <img
+                class="logos"
+                src="images/Goldsmiths-logo.png"
+                alt="Goldsmiths logo"
+            /></a>
+          </div>
+          <div class="cv-description">
+            <ul>
+              <li>
+                GOLDMISTHS, UNIVERSIDAD DE LONDRES / Aprendizaje a Distancia
+              </li>
+              <li>Graduado con <b>Matrícula de Honor</b>.</li>
+              <li>
+                Desarrollo de habilidades en informática, con una sólida
+                formación en programación y matemáticas, así como una
+                especialización en el último año en los campos de
+                <b>Inteligencia Artificial</b>, <b>Redes Neuronales</b> y
+                <b>Procesamiento de Lenguaje Natural</b>.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-date"><p>SEP/ 2007 TO DIC/ 2013</p></div>
+          <div class="cv-title">
+            <h4>_ARQUITECTO (Grado y Master)</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="logo-container">
+            <a
+              href="https://www.unav.edu/web/escuela-tecnica-superior-de-arquitectura"
+              target="_blank"
+              ><img class="logos" src="images/UNAV-logo.png" alt="UNAV logo"
+            /></a>
+          </div>
+          <div class="cv-description">
+            <ul>
+              <li>
+                UNIVERSIDAD DE NAVARRA /Escuela Técnica y Superior de
+                Arquitectura
+              </li>
+              <li>
+                <b>Diseño arquitectónico</b> y <b>gestión de proyectos</b> en
+                todas las áreas, desde el detalle de la construcción hasta el
+                cálculo de estructuras e instalaciones, incluyendo otras áreas
+                como planificación urbana, legislación, teoría e historia.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-date"><p>SEP/ 2011 TO JUN/ 2013</p></div>
+          <div class="cv-title">
+            <h4>
+              _ESPECIALIZACIÓN EN RESTAURACIÓN Y REHABILITACIÓN DE LA
+              ARQUITECTURA
+            </h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="logo-container">
+            <a
+              href="https://www.unav.edu/web/escuela-tecnica-superior-de-arquitectura"
+              target="_blank"
+              ><img class="logos" src="images/UNAV-logo.png" alt="UNAV logo"
+            /></a>
+          </div>
+          <div class="cv-description">
+            <ul>
+              <li>
+                UNIVERSIDAD DE NAVARRA /Escuela Técnica y Superior de
+                Arquitectura
+              </li>
+              <li>
+                <b
+                  >Desarrollo integral de proyectos de restauración y
+                  rehabilitación</b
+                >
+                que abarcan desde el estudio inicial, el levantamiento y la
+                restauración de planos, el análisis de patologías y técnicas de
+                restauración, incluyendo conocimientos en historia de la
+                arquitectura y construcción.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-container">
+      <div class="category-title"><h3>/EXPERIENCIA PROFESIONAL</h3></div>
+      <div class="category-info">
+        <div class="cv-key-info">
+          <div class="cv-date"><p>JUN/ 2017 A DÍA DE HOY</p></div>
+          <div class="cv-title">
+            <h4>_ALLFORD HALL MONAGHAN MORRIS - Arquitecto</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="logo-container">
+            <a href="https://www.ahmm.co.uk/" target="_blank"
+              ><img class="logos" src="images/AHMM-logo.png" alt="AHMM logo"
+            /></a>
+          </div>
+          <div class="cv-description">
+            <ul>
+              <li>
+                <b>Desarrollo de proyectos</b> desde las primeras fases
+                conceptuales hasta las detalladas, incluyendo
+                <b>presentaciones constantes</b> tanto a cargos superiores como
+                a clientes y equipos de diferentes disciplinas fuera de la
+                empresa, así como garantizar la <b>coordinación</b> con estos
+                últimos para asegurar el correcto desarrollo.
+              </li>
+              <li>
+                Trabajo tanto en el <b>diseño</b> a través del desarrollo de
+                ideas, dibujos, modelado 3D, gráficos,... como en el área
+                <b>técnica y normativa</b> a través del seguimiento constante de
+                todas las variables que puedan afectar al desarrollo del
+                proyecto hasta que los
+                <b>documentos y entregables finales</b> estén terminados y
+                presentados a los clientes.
+              </li>
+              <li>
+                Arquitecto de proyecto.
+                <b>Presentaciones a clientes</b> y
+                <b>liderar reuniones de equipo</b> fomentando la colaboración
+                entre equipos y departamentos asignando tareas según sea
+                necesario. Identificar rápidamente las ineficiencias del
+                proyecto y <b>proponer soluciones</b> a esos desafíos, mientras
+                se <b>gestionan los plazos</b> para asegurar que todos los
+                entregables se completen a tiempo.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-date"><p>FEB/ 2015 TO FEB/2019</p></div>
+          <div class="cv-title">
+            <h4>_ZAITER PHOTOGRAPHY - Fotógrafo de Arquitectura y Asistente</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="logo-container">
+            <a
+              href="https://www.linkedin.com/company/zaiter-photography"
+              target="_blank"
+              ><img
+                class="logos"
+                src="images/ZaiterPhotography-logo.png"
+                alt="Zaiter Photography logo"
+            /></a>
+          </div>
+          <div class="cv-description">
+            <ul>
+              <li>
+                Fotógrafo arquitectónico autónomo con sede en Londres.
+                <b>Fotografía interior por encargo</b> incluyendo la
+                postproducción completa de las imágenes finales para su
+                publicación en medios.
+              </li>
+              <li>
+                <b>Desarrollo de marca</b> incluyendo el diseño interno de
+                documentos personalizados, tarjetas de visita y un sitio web.
+              </li>
+              <li>
+                Asistente de fotografía para el renombrado fotógrafo
+                arquitectónico
+                <b>Edmund Sumner</b> cuyo trabajo incluye encargos en el Reino
+                Unido, India, Japón, México, Oriente Medio y Estados Unidos.
+                <b>Asistencia en el lugar</b> para la toma de fotografías y
+                control del equipo fotográfico, así como la completa y
+                <b>postproducción final</b> de las imágenes tanto en el lugar
+                como de forma remota.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-date"><p>OCT/ 2015 TO MAY/ 2017</p></div>
+          <div class="cv-title">
+            <h4>_LIFSCHUTZ DAVIDSON SANDILANDS - Arquitecto</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="logo-container">
+            <a href="https://lds-uk.com/" target="_blank"
+              ><img class="logos" src="images/LDS-logo.png" alt="LDS logo"
+            /></a>
+          </div>
+          <div class="cv-description">
+            <ul>
+              <li>
+                Trabajé en varios proyectos con una
+                <b>amplia variedad de escalas</b> desde
+                <b>estudios de viabilidad</b> hasta <b>proyectos básicos</b>
+                centrados en el desarrollo arquitectónico y el diseño urbano.
+              </li>
+              <li>
+                Desarrollo y definición de
+                <b>planes de proyecto</b> incluyendo la necesaria
+                <b>coordinación</b> con el resto de los equipos, así como la
+                producción de
+                <b>modelos 3D, imágenes y documentos gráficos</b>
+                necesarios para la correcta explicación del proyecto, tanto para
+                presentaciones internas como para entregables finales para los
+                clientes.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="languages" class="section-container">
+      <div class="category-title"><h3>/IDIOMAS</h3></div>
+      <div class="category-info">
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_CASTELLANO</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>Lengua Materna</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_INGLÉS</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>Fluido</li>
+              <li>
+                +5 años viviendo en el Reino Unido | +10 años trabajando para
+                empleadores del Reino Unido | Título universitario en el Reino
+                Unido
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_FRANCÉS</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>Básico</li>
+              <li>Un mes viviendo en Francia con clases diarias intensivas.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="other-merits" class="section-container">
+      <div class="category-title"><h3>/OTROS MÉRITOS</h3></div>
+      <div class="category-info">
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_OTROS PROYECTOS</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/AntAtelier/" target="_blank">
+                  ANT atelier / Cofundador y Manager de Imagen</a
+                >
+                - Compañía basada en infografía y fotografía.
+              </li>
+              <li>
+                <a href="https://blogarq.wordpress.com/" target="_blank">
+                  BLOGARQ.com/ Cofundador y Escritor</a
+                >
+                - Blog de Arquitectura (+150k visitas durante sus dos años de
+                vida, +300k en la actualidad).
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_OTHER PROFESSIONAL EXPERIENCES</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>
+                Asistente del Departamento de Construcción de la UNAV (Profesor
+                a cargo: Domingo Pellicer Daviña). Asistente en clase y
+                corrección del trabajo de los estudiantes.
+              </li>
+              <li>
+                Diseñador gráfico en la editorial de publicaciones de la UNAV.
+                Diseño de publicaciones, edición de fotos y corrección de
+                pruebas.
+              </li>
+              <li>
+                Colaborador en ferias de arquitectura. Diseño de los diferentes
+                espacios, atención al cliente y venta.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_MÉRITOS FOTOGRÁFICOS</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>
+                Derechos Humanos 2012/ El Quinto Poder -
+                <a
+                  href="https://www.unav.edu/noticias/-/contents/17/04/2012/heroic-trader-fights-looters-de-fernando-salah-zaiter-primer-premio-del-iii-concurso-de-fotografia-del-foro-de-derechos-humanos/content/lovPblW1fC70/316253"
+                  target="_blank"
+                >
+                  Ganador
+                </a>
+              </li>
+              <li>
+                Occidens 2013/ Timelapse Esculturas Día y Noche -
+                <a href="https://vimeo.com/60372761" target="_blank">
+                  Ganador ex-aequo
+                </a>
+              </li>
+              <li>Fotografía, Ciencia y Naturaleza 2012 - Segundo Premio</li>
+              <li>Director del Club de Fotografía de la ETSAUN</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-key-info">
+          <div class="cv-title">
+            <h4>_HOBBIES</h4>
+          </div>
+        </div>
+        <div class="cv-extra-info">
+          <div class="cv-description">
+            <ul>
+              <li>Automatización del Hogar | Carpintería</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <button class="language-selection">
+        <a href="#top">Volver arriba</a>
+      </button>
     </div>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>

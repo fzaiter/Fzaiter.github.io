@@ -3,10 +3,9 @@
 * {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
     sans-serif;
-  font-optical-sizing: auto;
   color: rgba(50, 50, 50, 0.8);
-  /* border: 1px solid red; */
 }
+
 body {
   max-width: 960px;
   margin: auto;
@@ -14,126 +13,123 @@ body {
   min-width: 300px;
   overflow: auto;
   background-color: rgb(244, 244, 240);
+  font-size: 14px;
 }
-p,
+
+/* Common styles for headings and lists */
+h1 {
+  font-size: 2em;
+}
+
 h4,
-h5,
 ul {
-  margin: 5px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 }
+
+/* Header and footer styles */
 .header {
   margin-top: 20px;
   text-align: right;
 }
+
 .footer {
   margin-top: 60px;
   margin-bottom: 60px;
   text-align: right;
 }
+
+/* Introduction section styles */
 .intro {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .greetings {
   margin-top: 50px;
   flex: 1 1 400px;
 }
+
 .referrals {
   align-content: flex-end;
   margin-left: auto;
   margin-bottom: 10px;
 }
+
 .my-info {
-  font-size: 90%;
   font-style: oblique;
   text-align: justify;
   text-indent: 30px;
   margin-bottom: 50px;
 }
+
 .contact {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
+
+/* Section container styles */
 .section-container {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
+
+/* Category styles */
 .category-info {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 500px;
-
   padding: 1em;
   border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
-.category-title {
-  font-weight: bold;
-  text-align: right;
 
+.category-title {
+  text-align: right;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   top: 30px;
   vertical-align: bottom;
-
   align-self: flex-start;
   position: sticky;
   position: -webkit-sticky; /* Safari */
 }
+
+/* CV section styles */
 .cv-key-info {
   display: flex;
+  width: 100%;
   flex-wrap: nowrap;
+  border-bottom: 0.5px dotted rgba(0, 0, 0, 0.3);
 }
+
 .cv-extra-info {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
+
 .cv-title {
-  font-weight: bold;
   vertical-align: bottom;
-  flex: 1 1 500px;
+  flex: 1 1 auto;
 }
+
 .cv-date {
-  font-size: 80%;
-  font-weight: bold;
+  font-size: 0.9em;
   font-style: italic;
   flex: 0 0 100px;
 }
+
 .cv-description {
   font-style: italic;
   text-align: justify;
-  font-size: 90%;
   flex: 1 1 500px;
 }
-.logo-container {
-  text-align: center;
-  margin: auto;
-  flex: 0 0 100px;
-}
-.icon-button,
-.language-selection {
-  border-radius: 5px;
-  background-color: transparent;
-  border: none;
-}
-.icon-button:hover,
-.language-selection:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.progress-bar {
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  height: 8px;
-  background: rgba(0, 0, 0, 0.75);
-  width: 0%;
-}
+
+/* Image styles */
 img.referral-logo {
   width: 50px;
   height: auto;
@@ -142,6 +138,7 @@ img.referral-logo {
   background-color: transparent;
   border: none;
 }
+
 img.logos {
   height: 75px;
   width: auto;
@@ -150,10 +147,43 @@ img.logos {
   background-color: transparent;
   border: none;
 }
+
 img.logos:hover,
 img.referral-logo:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+/* Logo and button styles */
+.logo-container {
+  text-align: center;
+  margin: auto;
+  flex: 0 0 100px;
+}
+
+.icon-button,
+.language-selection {
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+.icon-button:hover,
+.language-selection:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Progress bar styles */
+.progress-bar {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 8px;
+  background: rgba(50, 50, 50, 1);
+  width: 0%;
+}
+
 #more-info {
   display: none;
 }
@@ -179,12 +209,10 @@ img.referral-logo:hover {
 #skills .cv-extra-info,
 #languages .cv-extra-info,
 #other-merits .cv-extra-info {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-/*The use of 666 below is not due to any satanic myth, 
-it is simply the result of 600px -used for several 
-flexboxes-divided by 90% (as this is the width value 
-implemented in body).*/
+
+/* Responsive design styles */
 @media (max-width: 666px) {
   .category-title {
     writing-mode: horizontal-tb;
@@ -197,14 +225,8 @@ implemented in body).*/
     background-color: rgb(244, 244, 240);
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   }
-  .category-info {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 500px;
-    padding: 0em;
-    border-left: 0px;
-  }
 }
+
 @media (max-width: 755px) {
   .logo-container {
     flex: 1 0 200px;

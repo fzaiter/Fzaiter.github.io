@@ -1,14 +1,15 @@
-function CopyToClipboard(text_id) {
-  var Text = document.getElementById(text_id);
-  navigator.clipboard.writeText(Text.value);
+function copyToClipboard(textId) {
+  const textElement = document.getElementById(textId);
+  navigator.clipboard.writeText(textElement.value);
   console.log("Email copied to clipboard");
 }
+
 // Progress bar - source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_indicator
-function ProgressFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height =
+function progressFunction() {
+  const winScroll = window.scrollY || document.documentElement.scrollTop;
+  const height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = `${scrolled}%`;
 }
