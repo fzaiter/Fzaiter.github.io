@@ -207,6 +207,6 @@ implemented in body).*/
 }
 @media (max-width: 755px) {
   .logo-container {
-    flex: 1 0 500px;
+    flex: 1 0 200px;
   }
 }
