@@ -13,12 +13,3 @@ function progressFunction() {
   const scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = `${scrolled}%`;
 }
-
-window.onscroll = function () {
-  var arrow = document.getElementById("arrow");
-  if (window.pageYOffset > 0) {
-    arrow.style.display = "none";
-  } else {
-    arrow.style.display = "block";
-  }
-};

@@ -27,11 +27,10 @@ li,
 p {
   margin-block-start: 0em;
   margin-block-end: 1em;
-
   text-align: justify;
 }
 h3 {
-  margin: 0em 0em 1em 0.5em;
+  margin: 0.5em 0em 1em 0.5em;
 }
 /* Header and footer styles */
 .header {
@@ -250,27 +249,6 @@ img.referral-logo:hover {
   }
   .category-info {
     border-left: 0px;
-  }
-  /* Blinking arrow on mobile */
-  #arrow {
-    visibility: visible;
-    animation: blink 1s steps(1, end) infinite;
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 }
 
