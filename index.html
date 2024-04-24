@@ -6,15 +6,15 @@
     <title>Fernando Zaiter-EN</title>
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
   </head>
-  <body onscroll="ProgressFunction()">
+  <body onscroll="progressFunction()">
     <div class="header">
       <a id="top"></a>
-      <button class="language-selection"><a href="/">English</a></button>
-      <button class="language-selection">
+      <button class="language-options"><a href="/">English</a></button>
+      <button class="language-options">
         <a href="spanish.html">Español</a>
       </button>
     </div>
@@ -72,16 +72,20 @@
           readonly="readonly"
           id="email"
         />
-        <button class="icon-button" onclick="CopyToClipboard('email')">
-          <i class="material-icons">content_copy</i>
-        </button>
-        <button class="icon-button" onclick="CopyToClipboard('email')">
-          <a href="mailto:emailaddress@mail.com?subject=Portfolio Contact"
-            ><i class="material-icons">mail</i></a
-          >
-        </button>
+        <a class="material-symbols-outlined" onclick="copyToClipboard('email')"
+          >content_copy
+        </a>
+        <a
+          class="material-symbols-outlined"
+          href="mailto:fzaiter.cerzn@aleeas.com?subject=Portfolio Contact"
+          >mail</a
+        >
       </div>
     </section>
+
+    <div id="arrow">
+      <span class="material-symbols-outlined"> unfold_more </span>
+    </div>
 
     <section id="skills" class="section-container">
       <div class="category-title"><h3>/SKILLS</h3></div>
@@ -135,7 +139,7 @@
       <div class="category-title"><h3>/PROJECTS</h3></div>
       <div class="category-info">
         <div class="cv-key-info">
-          <div class="cv-date"><p>SEP/ 2020 TO MAY 2021</p></div>
+          <div class="cv-date">SEP/ 2020 TO MAY 2021</div>
           <div class="cv-title">
             <h4>
               _TRAINING MAZE SOLVING THROUGH REINFORCEMENT LEARNING - BSc Final
@@ -180,7 +184,7 @@
           </div>
         </div>
         <div class="cv-key-info">
-          <div class="cv-date"><p>APR/ 2024</p></div>
+          <div class="cv-date">APR/ 2024</div>
           <div class="cv-title">
             <h4>_HTML/ CSS CURRICULUM VITAE</h4>
           </div>
@@ -219,7 +223,7 @@
       <div class="category-title"><h3>/EDUCATION</h3></div>
       <div class="category-info">
         <div class="cv-key-info">
-          <div class="cv-date"><p>SEP/ 2017 TO JUN/ 2021</p></div>
+          <div class="cv-date">SEP/ 2017 TO JUN/ 2021</div>
           <div class="cv-title">
             <h4>_COMPUTER AND INFORMATION SYSTEMS (BSc.)</h4>
           </div>
@@ -257,7 +261,7 @@
           </div>
         </div>
         <div class="cv-key-info">
-          <div class="cv-date"><p>SEP/ 2007 TO DEC/ 2013</p></div>
+          <div class="cv-date">SEP/ 2007 TO DEC/ 2013</div>
           <div class="cv-title">
             <h4>_MASTER DEGREE IN ARCHITECTURE (MSc. Arch)</h4>
           </div>
@@ -285,7 +289,7 @@
           </div>
         </div>
         <div class="cv-key-info">
-          <div class="cv-date"><p>SEP/ 2011 TO JUN/ 2013</p></div>
+          <div class="cv-date">SEP/ 2011 TO JUN/ 2013</div>
           <div class="cv-title">
             <h4>
               _SPECIALIZATION IN RESTORATION AND REHABILITATION OF ARCHITECTURE
@@ -324,7 +328,7 @@
       <div class="category-title"><h3>/PROFESSIONAL EXPERIENCE</h3></div>
       <div class="category-info">
         <div class="cv-key-info">
-          <div class="cv-date"><p>JUN/ 2017 TO THIS DAY</p></div>
+          <div class="cv-date">JUN/ 2017 TO THIS DAY</div>
           <div class="cv-title">
             <h4>_ALLFORD HALL MONAGHAN MORRIS - Architect</h4>
           </div>
@@ -367,7 +371,7 @@
           </div>
         </div>
         <div class="cv-key-info">
-          <div class="cv-date"><p>FEB/ 2015 TO FEB/2019</p></div>
+          <div class="cv-date">FEB/ 2015 TO FEB/2019</div>
           <div class="cv-title">
             <h4>
               _ZAITER PHOTOGRAPHY - Architectural Photographer & Assistant
@@ -409,7 +413,7 @@
           </div>
         </div>
         <div class="cv-key-info">
-          <div class="cv-date"><p>OCT/ 2015 TO MAY/ 2017</p></div>
+          <div class="cv-date">OCT/ 2015 TO MAY/ 2017</div>
           <div class="cv-title">
             <h4>_LIFSCHUTZ DAVIDSON SANDILANDS - Architect</h4>
           </div>
@@ -585,7 +589,8 @@
     </section>
 
     <div class="footer">
-      <button class="language-selection"><a href="#top">Back to top</a></button>
+      <span class="signature">&copy; Designed by Fernando Zaiter </span>
+      <button class="back-to-top-button"><a href="#top">Back to top</a></button>
     </div>
 
     <script src="scripts/script.js"></script>

@@ -22,11 +22,17 @@ h1 {
 }
 
 h4,
-ul {
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
-}
+ul,
+li,
+p {
+  margin-block-start: 0em;
+  margin-block-end: 1em;
 
+  text-align: justify;
+}
+h3 {
+  margin: 0em 0em 1em 0.5em;
+}
 /* Header and footer styles */
 .header {
   margin-top: 20px;
@@ -34,9 +40,17 @@ ul {
 }
 
 .footer {
-  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
   margin-bottom: 60px;
-  text-align: right;
+}
+.signature {
+  font-size: 0.8em;
+  font-style: oblique;
+  background-color: transparent;
+  border: none;
+  margin-inline-start: 15px;
 }
 
 /* Introduction section styles */
@@ -53,21 +67,23 @@ ul {
 }
 
 .referrals {
-  align-content: flex-end;
+  align-self: flex-end;
   margin-left: auto;
   margin-bottom: 10px;
 }
 
 .my-info {
-  font-style: oblique;
+  margin-bottom: 50px;
+}
+
+p.my-info {
   text-align: justify;
   text-indent: 30px;
-  margin-bottom: 50px;
+  font-style: oblique;
 }
 
 .contact {
   display: flex;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -81,18 +97,18 @@ ul {
 /* Category styles */
 .category-info {
   display: flex;
+  margin-top: 10px;
   flex-wrap: wrap;
   flex: 1 1 500px;
-  padding: 1em;
+  padding: 0em 0em 0em 1em;
   border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .category-title {
-  text-align: right;
+  display: flex;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  margin-top: 20px;
-  vertical-align: bottom;
+  top: 15px;
   align-self: flex-start;
   position: sticky;
   position: -webkit-sticky; /* Safari */
@@ -109,11 +125,10 @@ ul {
 .cv-extra-info {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .cv-title {
-  vertical-align: bottom;
   flex: 1 1 auto;
 }
 
@@ -125,7 +140,6 @@ ul {
 
 .cv-description {
   font-style: italic;
-  text-align: justify;
   flex: 1 1 500px;
 }
 
@@ -160,15 +174,20 @@ img.referral-logo:hover {
   flex: 0 0 100px;
 }
 
-.icon-button,
-.language-selection {
+.material-symbols-outlined,
+.language-options,
+.back-to-top-button {
   border-radius: 5px;
+  text-align: center;
   background-color: transparent;
   border: none;
+  padding-inline: 0px;
+  margin-inline-start: 15px;
 }
 
-.icon-button:hover,
-.language-selection:hover {
+.material-symbols-outlined:hover,
+.language-options:hover,
+.back-to-top-button:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -192,7 +211,7 @@ img.referral-logo:hover {
   border-color: rgba(0, 0, 0, 0.2);
   padding: 4px;
   height: 140%;
-  min-width: 240px;
+  min-width: 220px;
 }
 #id {
   color: red;
@@ -218,19 +237,38 @@ img.referral-logo:hover {
     writing-mode: horizontal-tb;
     transform: rotate(0deg);
     top: 0px;
-    padding: 8px;
+    padding: 15px 0px 0px 0px;
     flex: 1 1 500px;
     position: sticky;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     background-color: rgb(244, 244, 240);
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   }
   .category-info {
     border-left: 0px;
   }
+  /* Blinking arrow on mobile */
+#arrow {
+  animation: blink 1s steps(1, end) infinite;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@media (max-width: 755px) {
+@media (max-width: 776px) {
   .logo-container {
     flex: 1 0 200px;
   }

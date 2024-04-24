@@ -6,15 +6,15 @@
     <title>Fernando Zaiter-ES</title>
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
   </head>
-  <body onscroll="ProgressFunction()">
+  <body onscroll="progressFunction()">
     <div class="header">
       <a id="top"></a>
-      <button class="language-selection"><a href="/">English</a></button>
-      <button class="language-selection">
+      <button class="language-options"><a href="/">English</a></button>
+      <button class="language-options">
         <a href="spanish.html">Español</a>
       </button>
     </div>
@@ -72,14 +72,14 @@
           readonly="readonly"
           id="email"
         />
-        <button class="icon-button" onclick="CopyToClipboard('email')">
-          <i class="material-icons">content_copy</i>
-        </button>
-        <button class="icon-button" onclick="CopyToClipboard('email')">
-          <a href="mailto:emailaddress@mail.com?subject=Portfolio Contact"
-            ><i class="material-icons">mail</i></a
-          >
-        </button>
+        <a class="material-symbols-outlined" onclick="copyToClipboard('email')"
+          >content_copy
+        </a>
+        <a
+          class="material-symbols-outlined"
+          href="mailto:fzaiter.cerzn@aleeas.com?subject=Portfolio Contact"
+          >mail</a
+        >
       </div>
     </section>
 
@@ -530,7 +530,7 @@
         </div>
         <div class="cv-key-info">
           <div class="cv-title">
-            <h4>_OTHER PROFESSIONAL EXPERIENCES</h4>
+            <h4>_OTRAS EXPERIENCIAS PROFESIONALES</h4>
           </div>
         </div>
         <div class="cv-extra-info">
@@ -597,7 +597,8 @@
     </section>
 
     <div class="footer">
-      <button class="language-selection">
+      <span class="signature">&copy; Diseñado por Fernando Zaiter </span>
+      <button class="back-to-top-button">
         <a href="#top">Volver arriba</a>
       </button>
     </div>
