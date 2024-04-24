@@ -231,6 +231,10 @@ img.referral-logo:hover {
   margin-bottom: 10px;
 }
 
+#arrow {
+  visibility: hidden;
+}
+
 /* Responsive design styles */
 @media (max-width: 666px) {
   .category-title {
@@ -248,23 +252,25 @@ img.referral-logo:hover {
     border-left: 0px;
   }
   /* Blinking arrow on mobile */
-#arrow {
-  animation: blink 1s steps(1, end) infinite;
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  display: flex;
-  justify-content: center;
-}
-@keyframes blink {
-  0% {
-    opacity: 1;
+  #arrow {
+    visibility: visible;
+    animation: blink 1s steps(1, end) infinite;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
   }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
