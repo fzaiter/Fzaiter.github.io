@@ -136,6 +136,8 @@ p.my-info {
   font-size: 0.9em;
   font-style: italic;
   flex: 0 0 100px;
+  box-sizing: border-box;
+  padding-right: 10px;
 }
 
 .cv-description {
