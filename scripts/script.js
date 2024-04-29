@@ -1,3 +1,4 @@
+//Copy text to clipboard
 function copyToClipboard(textId) {
   const textElement = document.getElementById(textId);
   navigator.clipboard.writeText(textElement.value);
@@ -12,4 +13,9 @@ function progressFunction() {
     document.documentElement.clientHeight;
   const scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = `${scrolled}%`;
+}
+
+// Scroll To Top
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
