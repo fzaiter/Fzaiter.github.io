@@ -4,6 +4,7 @@
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
     sans-serif;
   color: rgba(50, 50, 50, 0.8);
+  -webkit-text-size-adjust: 100%; /* Safari */
 }
 
 body {
@@ -36,7 +37,6 @@ h3 {
 button,
 input {
   -webkit-appearance: none; /* Safari */
-  -webkit-text-size-adjust: 100%; /* Safari */
 }
 /* Header and footer styles */
 .header {
