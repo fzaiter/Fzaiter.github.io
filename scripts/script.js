@@ -1,8 +1,12 @@
 //Copy text to clipboard
-function copyToClipboard(textId) {
+function copyToClipboard(textId, tooltipId) {
   const textElement = document.getElementById(textId);
+  const tooltip = document.getElementById(tooltipId);
   navigator.clipboard.writeText(textElement.value);
-  console.log("Text copied to clipboard");
+  tooltip.style.opacity = 1;
+  setTimeout(function () {
+    tooltip.style.opacity = 0;
+  }, 1500);
 }
 
 // Progress bar - source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_indicator

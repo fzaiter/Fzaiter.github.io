@@ -71,9 +71,12 @@
           readonly="readonly"
           id="email"
         />
-        <a class="material-symbols-outlined" onclick="copyToClipboard('email')"
+        <a
+          class="material-symbols-outlined"
+          onclick="copyToClipboard('email','email-tooltip')"
           >content_copy
         </a>
+        <span id="email-tooltip" class="tooltip">¡Email copiado!</span>
         <a
           class="material-symbols-outlined"
           href="mailto:fzaiter.cerzn@aleeas.com?subject=Portfolio Contact"
