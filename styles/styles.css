@@ -33,6 +33,10 @@ h3 {
   margin: 0.5em 0em 1em 0.5em;
   font-size: 1.4em;
 }
+button,
+input {
+  -webkit-appearance: none; /* Safari */
+}
 /* Header and footer styles */
 .header {
   margin-top: 20px;
