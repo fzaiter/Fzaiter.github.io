@@ -35,7 +35,9 @@ h3 {
   font-size: 1.4em;
 }
 button,
-input[type="text"] {
+input {
+  font-size: inherit;
+  padding: inherit;
   -webkit-appearance: none;
 }
 /* Header and footer styles */
@@ -231,6 +233,7 @@ img.referral-logo:hover {
 #email {
   border-radius: 15px;
   border-color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
   padding: 4px;
   width: 220px;
 }
