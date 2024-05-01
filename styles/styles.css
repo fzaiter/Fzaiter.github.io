@@ -36,6 +36,7 @@ h3 {
 button,
 input {
   -webkit-appearance: none; /* Safari */
+  -webkit-text-size-adjust: 100%; /* Safari */
 }
 /* Header and footer styles */
 .header {
