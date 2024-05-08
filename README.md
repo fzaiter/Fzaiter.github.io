@@ -2,9 +2,9 @@
 
 ## A responsive online CV using HTML, CSS, and JavaScript
 
-This project showcases a personal CV in a responsive and custom-designed website built with HTML, CSS, and JavaScript. It reflects my skills and creativity, entirely crafted from scratch. Feel free to use this as a starting point for your own portfolio or CV website.
+This project showcases a personal CV in a responsive and custom-designed website built with HTML, CSS, and JavaScript. Entirely crafted from scratch, it reflects my skills and creativity. Feel free to use this as a starting point for your own portfolio or CV website.
 
-- **Personalized Style:** Unique design, reflecting my personal brand and highlighting the information through a creative and engaging approach.
+- **Personalized Style:** Unique design highlighting the information through a creative and engaging approach.
 - **Interactive Elements:** Utilizes JavaScript for a progress bar, smooth scroll to top, and copy-to-clipboard information to add interactivity, enhancing user engagement and providing an dynamic browsing experience.
 - **Easy Github Pages Hosting:** The website is hosted on Github Pages, making it free and simple to implement.
 - **Fully Responsive Design:** The layout adjusts to fit various screen sizes, ensuring a seamless experience on desktops, tablets, and mobile devices.
@@ -24,7 +24,7 @@ Additionally, don't forget to update the icons to match your information and rem
 
 ## Report a bug or suggest an improvement
 
-If you encounter an issue or have an idea for improving this project, please submit an issue using the issues tab above. This will help me address the problem and make the project better for everyone.
+If you encounter an issue or have an idea for improving this project, please submit an issue using the issues tab above. This will help me address the problem and make the project better.
 
 ## Lessons learned
 
@@ -32,5 +32,4 @@ If you encounter an issue or have an idea for improving this project, please sub
 2. Keep it simple and intuitive: I aimed to create a website that was easy to navigate and understand. I used a simple structure and intuitive layouts to achieve this goal.
 3. Use responsive design: To ensure the website looked great on all devices, I used responsive design techniques. This allowed me to create a website that adapts to different screen sizes and devices, without sacrificing the user experience.
 4. Test and iterate: To ensure that my website was of high quality I tested it thoroughly and made adjustments as needed. This included testing on different devices and browsers, and seeking feedback from others.
-5. Use open-source resources: To save time and improve the quality of my website, I used open-source resources such as Google Fonts and Material Icons. 
-6. Learn from others: To improve my skills and knowledge, I learned from other developers and designers. This included studying their code, reading their blogs and articles, and participating in online communities.
+5. Learn from others: To improve my skills and knowledge, I learned from other developers and designers. This included studying their code, reading their blogs and articles.
