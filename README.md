@@ -32,5 +32,5 @@ If you encounter an issue or have an idea for improving this project, please sub
 2. Keep it simple and intuitive: I aimed to create a website that was easy to navigate and understand. I used a simple structure and intuitive layouts to achieve this goal.
 3. Use responsive design: To ensure the website looked great on all devices, I used responsive design techniques. This allowed me to create a website that adapts to different screen sizes and devices, without sacrificing the user experience.
 4. Test and iterate: To ensure that my website was of high quality I tested it thoroughly and made adjustments as needed. This included testing on different devices and browsers, and seeking feedback from others.
-5. Use open-source resources: To save time and improve the quality of my website, I used open-source resources such as Google Fonts and Material Icons. These resources provided a solid foundation for my website, and allowed me to focus on the unique features and content.
+5. Use open-source resources: To save time and improve the quality of my website, I used open-source resources such as Google Fonts and Material Icons. 
 6. Learn from others: To improve my skills and knowledge, I learned from other developers and designers. This included studying their code, reading their blogs and articles, and participating in online communities.
