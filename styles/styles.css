@@ -22,7 +22,16 @@ h1 {
   font-size: 2em;
 }
 
-h4,
+h3 {
+  margin: 0.5em 0em 1em 0.5em;
+  font-size: 1.4em;
+}
+
+h4 {
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+}
+
 ul,
 li,
 p {
@@ -30,10 +39,7 @@ p {
   margin-block-end: 1em;
   text-align: justify;
 }
-h3 {
-  margin: 0.5em 0em 1em 0.5em;
-  font-size: 1.4em;
-}
+
 button,
 input {
   font-size: inherit;
