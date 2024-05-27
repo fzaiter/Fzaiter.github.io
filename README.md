@@ -2,6 +2,9 @@
 
 ## A responsive online CV using HTML, CSS, and JavaScript
 
+<p align="center"><img src="images/CV Mockup.png" alt="CV Mockup" width="1000"/><br>
+<sub>Mockup showing the website on different types of screens</sub></p>
+
 This project showcases a personal CV in a responsive and custom-designed website built with HTML, CSS, and JavaScript. Entirely crafted from scratch, it reflects my skills and creativity. Feel free to use this as a starting point for your own portfolio or CV website.
 
 - **Personalized Style:** Unique design highlighting the information through a creative and engaging approach.
@@ -13,8 +16,8 @@ This project showcases a personal CV in a responsive and custom-designed website
 - **Accessible Contact Information:** The website features a dedicated section for contact information, making it easy for potential employers or collaborators to reach out.
 - **Language Selection:** A header offers users a choice of language versions.
 
-![Mockup showing the website on different types of screens](images/Fzaiter-Web-Mockup.jpg)
-<sub>Responsive Design demonstrating the website's adaptability across various screen sizes and devices</sub>
+<p align="center"><img src="images/Fzaiter-Web-Mockup.jpg" alt="Mockup showing the website on different types of screens" width="1000"/><br>
+<sub>Mockup showing the website on different types of screens</sub></p>
 
 ## Future Work
 
